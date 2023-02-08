@@ -4,5 +4,46 @@
 }
 
 body {
+    color: #FFF;
+    position: relative;
     text-align: center;
+    font-family: "Helvetica Neue";
+    background: url(https://media.istockphoto.com/id/1177195218/photo/pattern-with-binary-code.jpg?s=612x612&w=0&k=20&c=J8xi3D3OOiGUoBoZpubRcP5pUBquj16aYrkUAwc-2VI=);
+}
+
+#title {
+    padding: 2.5vh 0 1.5vh 0;
+}
+
+.intro {
+    background: #000;
+    width: 50vw;
+    margin: auto;
+    padding-bottom: 2.5vh;
+    border: #FFF solid 7.5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 17.5vh;
+    scale: 2;
+}
+
+.number {
+    text-align: center;
+    margin: 1.75vh 0 0 0;
+}
+
+#genNum {
+    margin: 10vh auto auto auto;
+    padding: 10px;
+    background: #000;
+    font-size: 2em;
+    border: #FFF solid 3.75px;
+}
+
+#genBtn {
+    scale: 1.5;
 }

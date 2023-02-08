@@ -2,16 +2,21 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css" />
+        <!--<link href="//db.onlinewebfonts.com/c/7cc6719bd5f0310be3150ba33418e72e?family=Comic+Sans+MS" rel="stylesheet" type="text/css"/>-->
         <title>My Random Number Generator</title>
     </head>
     <body>
-        <h1 id="title">Random Number Generator!</h1>
-        <h2 id="instructions">Enter both the low end and high end of your desired number range.  Then click "Generate!" to find out the number.</h2>
-        <div class="number-generator-div">
+        <div class="intro">
+            <h1 id="title"><span>Random Number Generator!</span></h1>
+            <h2 id="instructions"><span>Enter both the low end and high end of your desired number range.<br>Then click "Generate!" to find out the number.</span></h2>
+        </div>
+        <div class="container">
             <form class="numbers" onsubmit="return false">
-                <input type="number" id="low" placeholder="Low Number">
-                <input type="number" id="high" placeholder="High Number">
-                <button type="submit" id="genBtn">Generate!</button>
+                <input type="number" class="number" id="low" placeholder="Low Number">
+                <br>
+                <input type="number" class="number" id="high" placeholder="High Number">
+                <br>
+                <button type="submit" class="number" id="genBtn">Generate!</button>
             </form>
             <label id="genNum">Your Number</label>
         </div>
