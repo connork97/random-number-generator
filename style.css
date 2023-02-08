@@ -7,20 +7,24 @@ body {
     color: #FFF;
     position: relative;
     text-align: center;
-    font-family: "Helvetica Neue";
-    background: url(https://media.istockphoto.com/id/1177195218/photo/pattern-with-binary-code.jpg?s=612x612&w=0&k=20&c=J8xi3D3OOiGUoBoZpubRcP5pUBquj16aYrkUAwc-2VI=);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #FEA901;
+    top: 5vh;
 }
+
 
 #title {
     padding: 2.5vh 0 1.5vh 0;
+    font-size: 3em;
 }
 
 .intro {
-    background: #000;
-    width: 50vw;
+    background: #0156FE;
+    width: 55vw;
     margin: auto;
     padding-bottom: 2.5vh;
     border: #FFF solid 7.5px;
+    border-radius: 25%;
 }
 
 .container {
@@ -36,14 +40,30 @@ body {
     margin: 1.75vh 0 0 0;
 }
 
-#genNum {
-    margin: 10vh auto auto auto;
-    padding: 10px;
-    background: #000;
-    font-size: 2em;
-    border: #FFF solid 3.75px;
-}
-
 #genBtn {
     scale: 1.5;
 }
+
+#numBlob {
+    justify-content: center;
+    margin: auto;
+    font-size: 2em;
+}
+
+#genNum {
+    text-anchor: middle;
+    text-align: center;
+    font-size: 3em;
+    fill: #FFF;
+}
+
+/*
+#genNum {
+    margin: 7.5vh auto 5vh auto;
+    padding: 10px;
+    background: #0156FE;
+    font-size: 2em;
+    border: #FFF solid 3.75px;
+    border-radius: 25%;
+}
+*/

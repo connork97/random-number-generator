@@ -8,9 +8,11 @@ function randomNum() {
 
     if (lowValue > highValue) {
         window.alert("Your Low Number is Larger than your High Number #SillyGoose");
-    } else if (lowValue < 1 || highValue < 1) {
+    } else if (lowValue === "" || highValue === "") {
+        window.alert("Forgetting something? *cough* put in your numbers *cough*");
+    } else if (lowValue < 0 || highValue < 1) {
         window.alert("We are all about positive vibes here.  No negative numbers allowed.");
-    } else if (lowValue <= highValue) {
+    } else {
         let num = Math.floor(Math.random() * (highValue - lowValue + 1)) + lowValue;
         document.getElementById('genNum').innerHTML = num;
     }
@@ -18,7 +20,14 @@ function randomNum() {
 
 genBtn.addEventListener("click", randomNum);
 
+const tween = KUTE.fromTo(
+    '#blob2',
+    {path: '#blob2'},
+    {path: '#blob1'},
+    {repeat: 999, duration: 3000, yoyo: true}
+)
 
+tween.start()
 
 
 /*
