@@ -6,12 +6,12 @@ function randomNum() {
     let lowValue = Number(low.value);
     let highValue = Number(high.value);
 
-    if (lowValue > highValue) {
-        window.alert("Your Low Number is Larger than your High Number #SillyGoose");
-    } else if (lowValue === "" || highValue === "") {
-        window.alert("Forgetting something? *cough* put in your numbers *cough*");
-    } else if (lowValue < 0 || highValue < 1) {
+    if (lowValue < 0 || highValue < 0) {
         window.alert("We are all about positive vibes here.  No negative numbers allowed.");
+    } else if (lowValue === 0 || highValue === 0) {
+        window.alert("Forgetting something? *cough* put in your numbers *cough*");
+    } else if (lowValue > highValue) {
+        window.alert("Your low number is larger than your high number #SillyGoose");
     } else {
         let num = Math.floor(Math.random() * (highValue - lowValue + 1)) + lowValue;
         document.getElementById('genNum').innerHTML = num;
@@ -19,6 +19,8 @@ function randomNum() {
 }
 
 genBtn.addEventListener("click", randomNum);
+
+//my blob animation below:
 
 const tween = KUTE.fromTo(
     '#blob2',
@@ -29,40 +31,14 @@ const tween = KUTE.fromTo(
 
 tween.start()
 
+/* Tried to add a middle path, but could not figure it out.  Below was my last attempt to fix it.
+const tween = 
+KUTE.from('#blob2', {path: '#blob2'});
+    CUTE.to('#blob1', {path: '#blob1'});
+        QUTE.to('#blob3', {path: '#blob3'}); 
+    ({repeat: 999, duration: 3000, yoyo: true});
 
-/*
 
-let lowNumber = document.getElementById('low').value;
-let highNumber = document.getElementById('high').value;
-let generatedNumber = document.getElementById('genNum');
-let randomNumber;
+tween.start()
 
-document.getElementById('genBtn').onclick = function newGenNum() {
-    if (lowNumber >= 1 && lowNumber < highNumber) {
-        randomNumber = Math.floor(Math.random() * highNumber) + lowNumber;
-        document.getElementById('genNum').innerHTML = randomNumber;
-    }
-}
-
-//split between older work and newer work
-
-/*
-let lowNumber = document.getElementById('low-number').value;
-let highNumber = document.getElementById('high-number').value;
-let generateBtn = document.getElementById('generate-button');
-
-let yourNumber = ['generated-number'];
-
-//when submitBtn.ISCLICKED, run generateNumber function
-generateBtn.onclick = function generateNumber() {
-    //Parameters: if (both numbers are at least 1, AND highNumber is Greater than lowNumber)
-    if (lowNumber >= 1 && lowNumber < highNumber) {
-        //set newNumber to the value of the randomly generated number, AND replace the text "Your Number"
-        Math.floor(Math.random() * `${highNumber}`) + `${lowNumber}`;
-//let newNumber = document.getElementById('generated-number');
-    }
-    console.log(generatedNumber)
-}
-
-generateBtn.addEventListener('click', generateNumber)
 */

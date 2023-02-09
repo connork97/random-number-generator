@@ -7,31 +7,36 @@ body {
     color: #FFF;
     position: relative;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    background-color: #FEA901;
+    background-color: #00BB70;
     top: 5vh;
+    overflow-x: hidden;
 }
 
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background: #BB004B;
+    padding-bottom: 2.5vh;
+    border: #FFF solid 7.5px;
+    border-radius: 25%;
+}
 
 #title {
     padding: 2.5vh 0 1.5vh 0;
     font-size: 3em;
 }
 
-.intro {
-    background: #0156FE;
-    width: 55vw;
-    margin: auto;
-    padding-bottom: 2.5vh;
-    border: #FFF solid 7.5px;
-    border-radius: 25%;
-}
-
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 17.5vh;
+    margin-top: 12.5vh;
     scale: 2;
 }
 
